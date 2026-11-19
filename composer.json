@@ -1,0 +1,28 @@
+{
+    "name": "aula/assistencia-tecnica",
+    "description": "Projeto final de POO - assistencia tecnica CLI",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Valdir Junior",
+            "email": "valdir.a.junior@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "ext-pdo": "*",
+        "ext-pdo_sqlite": "*",
+        "ext-readline": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Assistencia\\": "src/"
+        }
+    },
+    "scripts": {
+        "start": "@php index.php",
+        "demo": "@php exemplos/01-dominio.php",
+        "test": "@php verificacoes.php"
+    },
+    "license": "proprietary"
+}
